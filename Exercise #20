@@ -12,37 +12,47 @@ public class Homework420 {
     public static void main(String[] args) {
         double total=0;
         
-    double b=0;
+  double b=0;
     double a=0;
-   
+   double total =0;
+  double btotal=0;
+int term =0;
+int z=0;
+          double atotal=0;
 
-        
-        for(int x=2 ;x<=200;x+=1 ){
+        for(int x=1 ;x<=200;x+=1 ){
+            
+            term = term+x;
             
             
-            
-            while (total <= 3.1415){
-                  if(x%2==1) {
+           
+                 
      
-                   for(double z=0 ;z<=100;z+=2 ) {
-                    b=(-(4/(3+z)));  
+                   //for(double term=0 ;term<=100;term+=2 ) {
+                       
+                   if(term%2==1) {  
                    
-                    System.out.printf("%s%n", b);
+                    b=((4/(3+z)));  
+                   btotal=btotal+b;
+                   
+                    System.out.printf("%sb%n", b);
                      }
-                  }
-          
-              
-                   if(x%2==0) {
-                     for(double y=0 ;y<=100;y+=4 ) {
-                    a=(4/(3+y));
-                    y+=4;
+                 
+                   if (term%2==0) {
+                   
+                  a=(4/(1+z));
+                  atotal=atotal+a;
+                  
                   System.out.printf("%s%n", a);
-                    }
-                   }
-          total =4+a+b; 
-        System.out.printf("%s%n", total);
+                  }
+                  while (total <= 3.1415){
+                 total =total+(a-b);  
+                 
+                  }
+           
+        System.out.printf("%stotal%n", total);
         }
     }
-    }
+  
     
 }
